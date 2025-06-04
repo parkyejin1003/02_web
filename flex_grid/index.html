@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>flexbox란? 행 열을 자유자제로 배치하는 것</h1>
+        <h2>float은 이미지와 텍스트를 어떻게 배치할 것인지를 나타내는 것</h2>
+        <p>container에 배치하는 것 / 왼쪽 정렬</p>
+        <div class="box">
+            <h3>display: flex; flex-direction: row(기본값)</h3>
+            <div class="container container1">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; flex-direction: row-reverse</h3>
+            <p>reverse:반대로, 중심축은 X축 / 오른쪽 정렬</p>
+            <div class="container container2">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <h3>display: flex; flex-direction: column</h3>
+            <p>중심축은 수직축, 행(y축) / 위에서 부터 시작</p>
+            <div class="container container3">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; flex-direction: column-reverse</h3>
+            <p>중심축은 수직축, 행(y축) / 아래에서 부터 시작</p>
+            <div class="container container4">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <h3>display: flex; flex-wrap: wrap</h3>
+            <p>자식인 item이 가득차면 다음 라인으로 내려감 [flex-wrap: nowrap -> 기본]</p>
+            <p>*우클릭-검사 눌러서 화면 축소하면 화면에 맞춰 밑으로 내려감</p>
+            <div class="container container5">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; flex-direction: wrap-reverse</h3>
+            <p>reverse:반대로 / 자식인 item이 가득차면 다음 라인으로 내려감</p>
+            <div class="container container6">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <h3>display: flex; flex-flow: column nowrap</h3>
+            <p>속성표기법 flex-flow: flex-direction, flex-wrap</p>
+            <div class="container container7">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <h2>중심축에서 아이템 배치</h2>
+        <div class="box">
+            <h3>display: flex; </h3>
+            <p>justify-content: flex-start(왼) / flex-end(오)</p>
+            <div class="container container8">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; justify-content: center</h3>
+            <p>중앙 배치</p>
+            <div class="container container9">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <h3>display: flex; justify-content: space-around</h3>
+            <p>양옆에 일정한 간격을 맞춰서 띄워줌</p>
+            <div class="container container10">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; justify-content: space-between</h3>
+            <p>양옆에 간격 안주고 나머지 똑같은 간격</p>
+            <div class="container container11">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; justify-content: space-evenly</h3>
+            <p>간격이 똑같음</p>
+            <div class="container container12">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <hr>
+        <h2>반대축에서 아이템 배치</h2>
+        <div class="box">
+            <h3>display: flex; align-item: center</h3>
+            <p>align-item: center 세로 가운데 부모요소인 container에 높이값이 설정되어있어야 함</p>
+            <div class="container container13">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; align-item: baseline</h3>
+            <p>align-item: baseline 텍스트 기준으로 배치</p>
+            <div class="container container14">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>display: flex; justify-content: center</h3>
+            <p>가로 세로 가운데 보내기</p>
+            <div class="container container15">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+            </div>
+        </div>
+        <h2>item 정렬 순서</h2>
+        <div class="box">
+            <h3>display: flex; </h3>
+            <p>item 순서 order 순서 변경 원래 기본값이 0 아무것도 안쓰면 0이므로 기본적인 모습을 보이고 0이 아닌 다른값을 가진 item의 큰 순서가 뒤로 가짐</p>
+            <div class="container container16">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
